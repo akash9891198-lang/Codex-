@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Mobile Chess</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="top-bar">
+        <h1>Mobile Chess</h1>
+        <p id="status" aria-live="polite">White to move</p>
+      </header>
+
+      <section class="board-wrap" aria-label="Chess board">
+        <div id="board" class="board" role="grid" aria-label="Chess board"></div>
+      </section>
+
+      <section class="controls">
+        <button id="undo" type="button">Undo</button>
+        <button id="new-game" type="button" class="primary">New Game</button>
+      </section>
+
+      <p class="hint">Tap a piece, then tap its destination square.</p>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0-beta.7/chess.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
